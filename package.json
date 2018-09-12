@@ -1,0 +1,27 @@
+{
+  "name": "puppeteer-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/QuantumArchive/puppeteer-demo.git",
+  "author": "chrbruner9@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn jest --config ./jest-config.json --runInBand --forceExit"
+  },
+  "dependencies": {
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.5.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^23.6.0",
+    "puppeteer": "^1.8.0",
+    "standard": "^10.0.3"
+  }
+}
