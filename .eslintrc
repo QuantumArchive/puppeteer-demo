@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["standard", "standard-react"],
+  "globals": {
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "beforeAll": true,
+    "afterAll": true,
+    "afterEach": true,
+    "before": true,
+    "after": true,
+    "test": true,
+    "global": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "plugins": [ "standard" ],
+  "rules": {
+    "strict": 0,
+    "no-console": ["error"]
+  }
+}

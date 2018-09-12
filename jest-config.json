@@ -1,0 +1,10 @@
+{
+  "automock": false,
+  "roots": [
+    "tests"
+  ],
+  "testMatch": [
+    "<rootDir>/*.test.js"
+  ],
+  "collectCoverage": false
+}
