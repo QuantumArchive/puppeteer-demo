@@ -45,11 +45,11 @@ describe('application loads correctly', () => {
 
   }, timeout)
 
-  test('enters swoosh into search and goes to search page', async () => {
+  // test('enters swoosh into search and goes to search page', async () => {
+  //   assert.ok(true)
+  // }, timeout)
 
-  }, timeout)
-
-  test('hover on men in nav bar and selects new releases and goes to new page', async () => {
-
-  }, timeout)
+  // test('hover on men in nav bar and selects new releases and goes to new page', async () => {
+  //   assert.ok(true)
+  // }, timeout)
 })
