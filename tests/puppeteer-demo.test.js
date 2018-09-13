@@ -12,7 +12,7 @@ describe('application loads correctly', () => {
   beforeAll(async () => {
     browser = await puppeteer.launch({
       headless: false,
-      slowMo: 5000,
+      slowMo: 1000,
       defaultViewPort: viewPortDimensions,
       dumpio: true,
       env: {},
@@ -29,8 +29,8 @@ describe('application loads correctly', () => {
 
   beforeEach(async () => {
     page = await browser.newPage()
-    await page.goto('https://www.google.com')
-    await page.waitForSelector('h1', timeoutOption)
+    await page.goto('https://www.nike.com/us/en_us/')
+    await page.waitForSelector('.nsg-glyph--swoosh', timeoutOption)
   }, timeout)
 
   afterEach(async () => {
@@ -41,7 +41,15 @@ describe('application loads correctly', () => {
     browser.close()
   }, timeout)
 
-  test('goes to google.com', async () => {
+  test('clicks on the cart item which goes to new page', async () => {
+
+  }, timeout)
+
+  test('enters swoosh into search and goes to search page', async () => {
+
+  }, timeout)
+
+  test('hover on men in nav bar and selects new releases and goes to new page', async () => {
 
   }, timeout)
 })
