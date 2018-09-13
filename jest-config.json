@@ -4,7 +4,7 @@
     "tests"
   ],
   "testMatch": [
-    "<rootDir>/*.test.js"
+    "<rootDir>/**/*.test.js"
   ],
   "collectCoverage": false
 }
