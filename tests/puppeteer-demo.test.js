@@ -20,13 +20,6 @@ describe('application loads correctly', () => {
     })
   }, timeout)
 
-  const getNewlyOpenedPage = (browser) => new Promise(
-    resolve => browser.once(
-      'targetcreated',
-      target => resolve(target.page())
-    )
-  )
-
   beforeEach(async () => {
     page = await browser.newPage()
     await page.goto('https://www.nike.com/us/en_us/')
