@@ -44,15 +44,16 @@ describe('application loads correctly', () => {
   test('clicks on the cart item which goes to new page', async () => {
     const cartGlyphNode = await page.$('.nsg-glyph--cart')
     await cartGlyphNode.click()
+    await page.waitForSelector('[id="ch4_summaryContent"]')
     const cartUrl = page.url()
     assert.ok(cartUrl.includes('cart'))
   }, timeout)
 
-  test('enters swoosh into search and goes to search page', async () => {
-    assert.ok(true)
-  }, timeout)
+  // test('enters swoosh into search and goes to search page', async () => {
+  //   assert.ok(true)
+  // }, timeout)
 
-  test('hover on men in nav bar and selects new releases and goes to new page', async () => {
-    assert.ok(true)
-  }, timeout)
+  // test('hover on men in nav bar and selects new releases and goes to new page', async () => {
+  //   assert.ok(true)
+  // }, timeout)
 })
